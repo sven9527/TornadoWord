@@ -1,0 +1,15 @@
+<!--pages/login/login.wxml-->
+<view>
+  <text class="app-title">{{title_name}}</text>
+
+  <view class="midddle-view">
+    <view class="logo-view">
+      <text class="app-title-mid">{{title_name}}</text>
+      <image class="title-logo" src="../../images/logo.png"></image>
+    </view>
+    <text class="app-des">{{title_desc}}</text>
+    <image class="login-bg" src="../../images/bg.png"></image>
+    <button class="login-btn" type="primary">{{btn_name}}</button>
+  </view>
+</view>
+
