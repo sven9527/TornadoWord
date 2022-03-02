@@ -1,7 +1,9 @@
 <!--pages/login/login.wxml-->
-<view>
-  <text class="app-title">{{title_name}}</text>
-
+<view class="main">
+  <view class="top-view">
+    <image></image>
+  </view>
+  
   <view class="midddle-view">
     <view class="logo-view">
       <text class="app-title-mid">{{title_name}}</text>
