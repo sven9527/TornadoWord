@@ -15,37 +15,40 @@ Page({
    */
   onLoad: function (options) {
     console.log("login onLoad===========")
-    this.setData({
-      userInfo: (wx.getStorageSync('UserData') || null)
-    })
+    let userInfo = getApp().globalData.userInfo
+    if (userInfo) {
+      wx.switchTab({
+        url: '/pages/home/home',
+      })
+    }
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log("login onReady===========")
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log("login onShow===========")
+ 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    console.log("login onHide===========")
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    console.log("login onUnload===========")
+
   },
 
   /**

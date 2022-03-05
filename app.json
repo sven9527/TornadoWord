@@ -3,6 +3,8 @@
     "pages/login/login",
     "pages/home/home",
     "pages/home/select/book",
+    "pages/home/select/dictionaries",
+    "pages/study/study",
     "pages/my/my",
     "pages/garden/garden"
   ],

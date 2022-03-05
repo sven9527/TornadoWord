@@ -1,0 +1,44 @@
+/* pages/home/select/dictionaries.wxss */
+
+.c-view {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.title-view {
+  position: fixed;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  font-weight: 500;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  padding: 10px;
+  border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.booklist-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 380rpx;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5rpx;
+  margin-top: 120rpx;
+}
+.booklist-view .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.booklist-view image {
+  width: 256rpx;
+  height: 256rpx;
+}
+.word-num {
+  font-size: 26rpx;
+  color: rgb(175, 173, 173);
+}

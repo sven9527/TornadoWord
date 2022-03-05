@@ -1,10 +1,14 @@
 // app.js
 App({
   onLaunch() {
-    
+    this.globalData.userInfo = wx.getStorageSync('userInfo') || null;
+    this.globalData.studyData = wx.getStorageSync('studyData') || null;
+    this.globalData.bookInfo = wx.getStorageSync('bookInfo') || null;
   },
   globalData: {
+    loadingStr: '数据加载中...',
     userInfo: null,
-    loadingStr: '数据加载中...'
+    studyData: null,
+    bookInfo: null
   }
 })

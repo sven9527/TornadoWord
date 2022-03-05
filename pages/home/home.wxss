@@ -34,6 +34,7 @@ page {
   font-size: 100rpx;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20rpx;
 }
 /*状态信息*/
 .state-view {
@@ -57,15 +58,29 @@ page {
   z-index: -1;
   border-radius: 25rpx;
 }
-.state-view > text {
+.title-view {
+  
+}
+.change-dic-view {
+  width: 20%;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: yellow;
+  align-items: center;
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+}
+.change-dic-view text {
+  display: block;
+  color: black;
+  margin-left: 15rpx;
+}
+.title-view > text {
   display: block;
   color: aliceblue;
   margin-bottom: 25%;
-}
-.state-view > progress {
-  margin-bottom: 2%;
-  border-radius: 15rpx;
-  color: chartreuse;
+  font-size: 40rpx;
 }
 .state-view > view {
   display: flex;

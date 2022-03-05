@@ -5,13 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isStudy: false,
     leadingStr: "我在龙卷风背单词",
     punchCale: "打卡日历 >",
     studyStateStr: "没有正在学的单词书",
     finishPresent: "已完成%",
+    studyProgress: 0,
     wordNum: "/词",
     todayTask: "- 今日任务 -",
-    newNum: "99",
+    newNum: "-",
     reviewNum: "-",
     unStudyNum: "-",
     backgroundImg: '../../images/book_sel_bg.jpg'
@@ -21,7 +23,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options)
+    this.loadStudyData();
   },
 
   /**
@@ -35,7 +37,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.loadStudyData();
   },
 
   /**
@@ -72,8 +74,43 @@ Page({
   onShareAppMessage: function () {
 
   },
+  // 加载学习数据
+  loadStudyData: function () {
+    let studyData = getApp().globalData.studyData
+    let bookInfo = getApp().globalData.bookInfo
+    if (studyData) {
+      this.setData({
+        isStudy: true,
+        studyStateStr: bookInfo.name,
+        finishPresent: "已完成" + studyData.finishPresent +"%",
+        wordNum: studyData.studyNum +'/'+ bookInfo.num +"词",
+        newNum: studyData.newNum,
+        reviewNum: studyData.reviewNum,
+        unStudyNum: studyData.unStudyNum,
+        studyProgress: studyData.finishPresent,
+      })
+    }
+  },
+  // 更新学习数据并保存
+  updateStudyDataAndSave: function(params) {
+    let studyData = null;
+    wx.setStorageSync('studyData', studyData);
+  },
 
+  // 选书
   onTapSelectBook: function (e) {
+    wx.navigateTo({
+      url: '/pages/home/select/book',
+    })
+  },
+  // 点击去学习
+  onTapStudy: function() {
+    wx.navigateTo({
+      url: '/pages/study/study',
+    })
+  },
+  // 点击更换词典 
+  onChangeDicTapped: function(params) {
     wx.navigateTo({
       url: '/pages/home/select/book',
     })

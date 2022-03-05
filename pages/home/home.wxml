@@ -1,7 +1,7 @@
 <!--pages/home/home.wxml-->
 <view class="main">
   <view class="top-view">
-    <text>{{leadingStr}}</text>
+    <!-- <text>{{leadingStr}}</text> -->
   </view>
   <view class="punch-card">
     <text>Hi~</text>
@@ -11,12 +11,18 @@
   </view>
   <view class="state-view">
     <image class="state-bg" src="{{backgroundImg}}"></image>
-    <text>{{studyStateStr}}</text>
+    <view class="title-view">
+      <text>{{studyStateStr}}</text>
+      <view bindtap="onChangeDicTapped" class="change-dic-view">
+        <text>更换词典 ></text>
+      </view>
+    </view>
+       
     <view>
       <text>{{finishPresent}}</text>
       <text>{{wordNum}}</text>
     </view>
-    <progress></progress>
+    <progress class="studyProgress" border-radius="5" percent="{{studyProgress}}"></progress>
   </view>
   <view class="today-task">
     <text>{{todayTask}}</text>
@@ -36,7 +42,8 @@
     </view>
 
     <view>
-      <button type="primary" bindtap="onTapSelectBook">去选单词书</button>
+      <button hidden="{{isStudy}}" type="primary" bindtap="onTapSelectBook">去选单词书</button>
+      <button hidden="{{!isStudy}}" type="primary" bindtap="onTapStudy">开始学习</button>
     </view>
     
   </view>
