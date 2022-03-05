@@ -1,0 +1,25 @@
+/* pages/home/home.wxss */
+
+.main {
+  margin: 0%;
+  padding: 0%;
+  height: 1100rpx;
+  border: 5px solid red;
+}
+
+.footbar {
+  border: 2px solid black;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+image {
+  /* display: block; */
+  padding: 20rpx;
+  width: 96rpx;
+  height: 96rpx;
+  border: 2px solid rosybrown;
+}

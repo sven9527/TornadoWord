@@ -62,5 +62,5 @@
 }
 
 .login-btn {
-  margin: 10%;
+  margin: 10% auto;
 }

@@ -1,0 +1,10 @@
+<!--pages/home/home.wxml-->
+<view class="main">
+  
+  
+  
+  <view class="footbar">
+    <view><image src="../../images/icon-home.png"></image></view>
+    <view><image src="../../images/icon-person.png"></image></view>
+  </view>
+</view>

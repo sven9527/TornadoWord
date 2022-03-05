@@ -1,13 +1,11 @@
-// pages/login/login.js
+// pages/home/home.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title_name: '龙卷风单词',
-    title_desc: '和小伙伴们一起背单词',
-    btn_name: '立刻体验',
+
   },
 
   /**
@@ -64,13 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  onLoginBtnTapped: function (e) {
-    wx.navigateTo({
-      url: '../home/home'
-    })
   }
-
-
 })
