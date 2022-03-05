@@ -1,0 +1,65 @@
+/* pages/home/select/book.wxss */
+page {
+  height: 100%;
+}
+
+text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top-view {
+  font-size: 40rpx;
+  margin: 40rpx;
+}
+/* hot view */
+.book-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 80rpx;
+}
+.book-tag {
+  margin-left: 30rpx;
+  font-size: 35rpx;
+}
+.book-view > view {
+  margin: 20rpx 0 0 50rpx;
+  display: grid;
+  grid-template-columns: 220rpx 220rpx 220rpx;
+  grid-template-rows: 80rpx;
+  grid-auto-rows: 80rpx;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20rpx;
+  font-size: 30rpx;
+}
+.book-view .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180rpx;
+  height: 65rpx;
+  color: rgb(0, 183, 148);
+  border: 1px solid rgb(0, 183, 148);
+  border-radius: 30rpx;
+}
+.book-view .item-other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180rpx;
+  height: 65rpx;
+  color: darkgrey;
+  background-color: rgb(233, 233, 233);
+  border-radius: 30rpx;
+}
+.book-view .itemSel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180rpx;
+  height: 65rpx;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 183, 148);
+  border-radius: 30rpx;
+}

@@ -1,0 +1,22 @@
+<!--pages/home/select/book.wxml-->
+<view>
+  <view class="top-view">
+    <text>{{selectStr}}</text>
+  </view>
+
+  <view class="book-view">
+    <text class="book-tag">{{tag_1}}</text>
+    <view class="item-view">
+      <view bindtap="onItemTap" data-item="{{item}}" class="{{item.style}}" wx:for="{{hotList}}" wx:key="index">{{item.value}}</view>
+    </view>
+  </view>
+
+  <view class="book-view">
+    <text class="book-tag">{{tag_2}}</text>
+    <view class="item-view">
+      <view bindtap="onItemTap" data-item="{{item}}" class="{{item.style}}" wx:for="{{otherList}}" wx:key="index">{{item.value}}</view>
+    </view>
+  </view>
+
+
+</view>

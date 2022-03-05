@@ -2,14 +2,38 @@
   "pages":[
     "pages/login/login",
     "pages/home/home",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/select/book",
+    "pages/my/my",
+    "pages/garden/garden"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "龙卷风单词",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "./images/icon-home-unsel.png",
+        "selectedIconPath": "./images/icon-home-sel.png",
+        "text": "主页",
+        "pagePath": "pages/home/home"
+      },
+      {
+        "iconPath": "./images/icon-garden.png",
+        "selectedIconPath": "./images/icon-garden-sel.png",
+        "text": "花园",
+        "pagePath": "pages/garden/garden"
+      }
+      ,
+      {
+        "iconPath": "./images/icon-user-unsel.png",
+        "selectedIconPath": "./images/icon-user-sel.png",
+        "text": "我的",
+        "pagePath": "pages/my/my"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

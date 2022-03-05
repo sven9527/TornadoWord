@@ -1,0 +1,41 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+
+  <view class="avatar">
+    <image class="userInfoAvatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-nickname">ID:{{userInfo.id}}</text>
+  </view>
+
+  <view class="funcList">
+    <view>
+      <image mode="cover" src="../../images/icon-book.png"></image>
+      <text>单词书</text>
+    </view>
+    <view>
+      <image mode="cover" src="../../images/icon-shengci.png"></image>
+      <text>生词本</text>
+    </view>
+    <view>
+      <image mode="cover" src="../../images/icon-biji.png"></image>
+      <text>单词笔记</text>
+    </view>
+  </view>
+
+  <view class="about-us">
+    <view>
+      <image mode="cover" src="../../images/icon-book.png"></image>
+      <text>我的贝壳 ></text>
+    </view>
+    <view>
+      <image mode="cover" src="../../images/icon-book.png"></image>
+      <text>关于我们 ></text>
+    </view>
+    <view>
+      <image mode="cover" src="../../images/icon-book.png"></image>
+      <text>分享小程序 ></text>
+    </view>
+    
+  </view>
+
+</view>

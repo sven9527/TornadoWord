@@ -1,25 +1,114 @@
 /* pages/home/home.wxss */
+page {
+  height: 100%;
+}
 
 .main {
   margin: 0%;
   padding: 0%;
-  height: 1100rpx;
-  border: 5px solid red;
+  height: 99%;
 }
 
-.footbar {
-  border: 2px solid black;
-  height: 200rpx;
+/*设置顶部栏*/
+.top-view {
+  color: coral;
+}
+
+/*打卡信息*/
+.punch-card {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
+  height: 150rpx;
 }
 
-image {
-  /* display: block; */
-  padding: 20rpx;
-  width: 96rpx;
-  height: 96rpx;
-  border: 2px solid rosybrown;
+.punch-card view {
+  font-size: 25rpx;
+  background-color: darkseagreen;
+  border-radius: 25rpx 0 0 25rpx;
+  padding: 10rpx;
+}
+
+.punch-card > text {
+  font-size: 100rpx;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*状态信息*/
+.state-view {
+  height: 300rpx;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: darkgray; */
+  padding: 10rpx;
+  margin: 20rpx auto;
+  border-radius: 25rpx;
+  justify-content: flex-end;
+  position: relative;
+}
+.state-bg {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 25rpx;
+}
+.state-view > text {
+  display: block;
+  color: aliceblue;
+  margin-bottom: 25%;
+}
+.state-view > progress {
+  margin-bottom: 2%;
+  border-radius: 15rpx;
+  color: chartreuse;
+}
+.state-view > view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: aliceblue;
+  font-size: 25rpx;
+  padding: 5rpx;
+}
+/*今日任务*/
+.today-task {
+  height: 350rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.today-task > text{
+  color:darkgray;
+  font-size: 20rpx;
+}
+.today-task > view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.today-task > view > view {
+  width: 230rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+}
+.today-task > view > view > text {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 28rpx;
+}
+.today-task .numtext {
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+button {
+  margin-top: 150rpx;
 }
