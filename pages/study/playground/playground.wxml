@@ -1,0 +1,32 @@
+<!--pages/study/playground/playground.wxml-->
+<view class="playground">
+
+  <view class="top-view">
+    <view>
+      <text class="word-{{isForget}}" >{{word}}</text>
+      <text class="soundmark">{{soundmark}}</text>
+      <text class="soundmark">{{examType}}</text>
+    </view>
+    <image src="../../../images/volume_icon.png" bindtap="onWordAudioTap"></image>
+  </view>
+  
+  <view class="body-view">
+    <view>
+      <text class="dic-text">词典解释</text>
+      <text>{{mean_cn}}</text>
+      <text class="sentence">{{mean_en}}</text>
+    </view>
+    <view>
+      <text class="dic-text">例句</text>
+      <view wx:for="{{sentences}}" wx:key="index">
+        <text class="sentence" >{{item.s}}</text>
+        <text>{{item.trans}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="button-view">
+    <button class="next" hover-class="hover-class" type="primary" bindtap="onNextTap">下一个</button>
+  </view>
+
+</view>

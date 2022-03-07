@@ -69,5 +69,14 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  // 
+  onShareAppTap: function() {
+    console.log('onShareAppTap')
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ['shareAppMessage', 'shareTimeline']
+    })
   }
 })

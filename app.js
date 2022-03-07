@@ -9,6 +9,8 @@ App({
     loadingStr: '数据加载中...',
     userInfo: null,
     studyData: null,
-    bookInfo: null
+    bookInfo: null,
+    studyWord: null,
+    studyPercent: 0,
   }
 })

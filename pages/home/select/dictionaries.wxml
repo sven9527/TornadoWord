@@ -3,7 +3,7 @@
   <text class="title-view">{{bookSel}}</text>
   <view class="booklist-view">
     <view class="item" bindtap="onBookSelected" data-select="{{item.name}}" wx:for="{{booklist}}" wx:key="index">
-      <image src="../../../images/icon-blank-book.png">
+      <image src="../../../images/icon-book.png">
       </image>
       <text>{{item.name}}</text>
       <text class="word-num">{{item.num}}词</text>

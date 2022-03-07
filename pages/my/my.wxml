@@ -31,7 +31,7 @@
       <image mode="cover" src="../../images/icon-book.png"></image>
       <text>关于我们 ></text>
     </view>
-    <view>
+    <view bindtap="onShareAppTap">
       <image mode="cover" src="../../images/icon-book.png"></image>
       <text>分享小程序 ></text>
     </view>

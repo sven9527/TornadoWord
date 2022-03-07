@@ -1,2 +1,38 @@
 <!--pages/study/study.wxml-->
-<text>pages/study/study.wxml</text>
+<view class="studay-view">
+  <!-- 顶部view -->
+  <view class="top-view">
+    <view>
+      <text>今日复习</text>
+      <text class="num-text">{{todayReview}}</text>
+    </view>
+    <view>
+      <text>今日新词</text>
+      <text class="num-text">{{todayNew}}</text>
+    </view>
+    <view>
+      <text>学习时间</text>
+      <text class="num-text">{{studyTime}}</text>
+    </view>
+  </view>
+  <progress percent="{{studyPercent}}"></progress>
+  <!-- 单词、音标view -->
+  <view class="word-view">
+    <text class="currentWord">{{currentWord}}</text>
+    <view class="soundmark-view">
+      <image class="volume" bindtap="onPlaySoundTap" src="../../images/volume_icon.png"></image>
+      <text class="soundmark">{{soundmark}}</text>
+    </view>
+    <!-- 例句view -->
+    <view class="example-view" hidden="{{!showExample}}">
+      <view><text class="example-text">根据例句判断释义</text></view>
+      <view><text class="exampleSentence">{{exampleSentence}}</text></view>
+    </view>
+  </view>
+  
+  <view class="button-view">
+    <button class="remeber" hover-class="hover-forget" type="primary" bindtap="onRemenberTap">想起来了</button>
+    <button class="forget" hover-class="hover-class" type="primary" bindtap="onForgetTap">没想起来</button>
+  </view>
+
+</view>

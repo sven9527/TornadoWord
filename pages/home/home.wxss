@@ -124,6 +124,15 @@ page {
   font-weight: 600;
 }
 
-button {
-  margin-top: 150rpx;
+.button-view {
+  position: fixed;
+  width: 100%;
+  bottom: 20%;
+}
+.button-view button {
+  margin: 20rpx auto;
+  width: 80%;
+  height: 90rpx;
+  border-radius: 50rpx;
+  text-align: center;
 }

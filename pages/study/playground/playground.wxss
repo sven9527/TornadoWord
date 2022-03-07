@@ -1,0 +1,81 @@
+/* pages/study/playground/playground.wxss */
+page {
+  height: 100%;
+}
+
+.top-view {
+  height: 300rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-view view {
+  margin: 0 50rpx;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+.word-0 {
+  font-size: 80rpx;
+  font-weight: 600;
+}
+.word-1 {
+  font-size: 80rpx;
+  font-weight: 600;
+  color: rgb(245, 112, 3);
+}
+.soundmark {
+  color: gray;
+}
+.top-view image {
+  margin-right: 20rpx;
+  width: 64rpx;
+  height: 64rpx;
+}
+/* body */
+.body-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.dic-text {
+  color: green;
+  border-bottom: 1rpx solid darkgray;
+}
+.body-view view {
+  margin: 10rpx auto;
+  width: 94%;
+}
+.body-view text {
+  display: block;
+  font-size: 30rpx;
+  margin: 5rpx;
+}
+.sentence::first-letter {
+  text-transform: uppercase;  
+}
+
+
+/* 按钮 */
+.button-view {
+  position: fixed;
+  width: 100%;
+  bottom: 5%;
+}
+
+.button-view .next {
+  margin: 20rpx auto;
+  width: 90%;
+  height: 90rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  background-color: #00b696;
+}
+
+.hover-class:hover {
+  top: 2rpx;
+  position: relative;
+  background-color: #01d4ae;  
+}

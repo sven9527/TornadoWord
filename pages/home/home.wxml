@@ -41,7 +41,7 @@
       </view>
     </view>
 
-    <view>
+    <view class="button-view">
       <button hidden="{{isStudy}}" type="primary" bindtap="onTapSelectBook">去选单词书</button>
       <button hidden="{{!isStudy}}" type="primary" bindtap="onTapStudy">开始学习</button>
     </view>

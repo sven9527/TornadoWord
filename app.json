@@ -5,6 +5,7 @@
     "pages/home/select/book",
     "pages/home/select/dictionaries",
     "pages/study/study",
+    "pages/study/playground/playground",
     "pages/my/my",
     "pages/garden/garden"
   ],
